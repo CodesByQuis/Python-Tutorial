@@ -1,0 +1,125 @@
+## 1. Hello, World!
+print("Hello, World!")
+
+##2. Variables and Types
+# Assigning different types of values to variables
+x = 5                 # Integer
+y = 3.14              # Float
+name = "Marquis"      # String
+is_student = True     # Boolean
+
+##3. Lists
+# Creating a list
+fruits = ["apple", "banana", "cherry"]
+# Accessing list elements
+print(fruits[1])  # Output: banana
+# Adding an item to the list
+fruits.append("orange")
+# Modifying an element
+fruits[0] = "kiwi"
+
+##4. Basic Operators
+a = 10
+b = 5
+
+# Arithmetic operators
+sum = a + b            # Addition
+diff = a - b           # Subtraction
+product = a * b        # Multiplication
+quotient = a / b       # Division
+modulus = a % b        # Modulus (remainder)
+
+# Comparison operators
+is_equal = a == b      # Check if equal
+is_greater = a > b     # Check if greater
+
+##5. String Formatting
+name = "Marquis"
+age = 25
+
+# Using f-strings (Python 3.6+)
+print(f"Hello, my name is {name} and I am {age} years old.")
+
+# Using format() method
+print("Hello, my name is {} and I am {} years old.".format(name, age))
+
+##6. Basic String Operations
+# String slicing
+message = "Hello, World!"
+print(message[0:5])    # Output: Hello
+print(message[-6:])    # Output: World!
+
+# String methods
+lower_message = message.lower()   # Convert to lowercase
+upper_message = message.upper()   # Convert to uppercase
+
+##7. Conditions (if-else)
+x = 10
+y = 20
+
+if x < y:
+    print("x is less than y")
+elif x > y:
+    print("x is greater than y")
+else:
+    print("x is equal to y")
+
+##8. Loops (for and while)
+# For loop (iterating over a list)
+fruits = ["apple", "banana", "cherry"]
+for fruit in fruits:
+    print(fruit)
+
+# While loop (counting)
+count = 0
+while count < 5:
+    print(count)
+    count += 1
+
+##9. Functions
+# Defining a function
+def greet(name):
+    return f"Hello, {name}!"
+
+# Calling the function
+print(greet("Marquis"))
+
+##10. Classes and Objects
+# Defining a class
+class Dog:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def bark(self):
+        return f"{self.name} says Woof!"
+
+# Creating an object of the class
+my_dog = Dog("Buddy", 3)
+
+# Accessing class methods and attributes
+print(my_dog.bark())  # Output: Buddy says Woof!
+
+# Creating a dictionary
+person = {"name": "Marquis", "age": 25, "city": "Capitol Heights"}
+
+# Accessing dictionary values
+print(person["name"])   # Output: Marquis
+
+# Adding a new key-value pair
+person["job"] = "Student"
+
+# Importing a built-in module
+import math
+
+# Using the math module
+print(math.sqrt(16))  # Output: 4.0
+
+# Creating a custom module (in a separate file, example: mymodule.py)
+# Inside mymodule.py:
+# def say_hello():
+#     return "Hello from mymodule!"
+# 
+# Importing and using custom module
+# import mymodule
+# print(mymodule.say_hello()) 
